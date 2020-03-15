@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">台灣口罩地圖</string>
+    <string name="title_activity_act_map">Map</string>
+    <string name="loading">資料下載中...</string>
+    <string name="mask_bean_id"> 醫事機構代碼</string>
+    <string name="mask_bean_name">醫事機構名稱</string>
+    <string name="mask_bean_address">醫事機構地址</string>
+    <string name="mask_bean_tel">醫事機構電話</string>
+    <string name="mask_bean_datetime">來源資料時間</string>
+    <string name="mask_bean_child">兒童口罩剩餘數</string>
+    <string name="mask_bean_adult">成人口罩剩餘數</string>
+    <string name="search">搜尋</string>
+    <string name="yes">確定</string>
+    <string name="no">取消</string>
+    <string name="edit_hint">請輸入查詢相關資料</string>
+    <string name="hospital_sales_type">業務組別</string>
+    <string name="hospital_special_type">特約類別</string>
+    <string name="hospital_year">看診年度</string>
+    <string name="hospital_week">看診時間</string>
+    <string name="hospital_remark">備註</string>
+    <string name="hospital_state">開業狀況</string>
+    <string name="dialog_network_msg">請確認網路狀態是否正常</string>
+    <string name="dialog_network_title_error">錯誤訊息</string>
+    <string name="dialog_hospital_not_data">查無特約院所資料</string>
+    <string name="hospital_week_n">看診</string>
+    <string name="hospital_week_y">休診</string>
+</resources>
