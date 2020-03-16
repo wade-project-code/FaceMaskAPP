@@ -22,7 +22,7 @@ import javax.net.ssl.HttpsURLConnection;
  */
 public class HospitalDataAsyncTask extends AsyncTask<String,Integer,List<?>> {
     private HttpsURLConnection connection;
-    private IHospitalData iHospialData;
+    private IHospitalData iHospitalData;
     private Context mContext;
     private ProgressDialog dialog;
     private List<HospitalBean> list;
@@ -33,7 +33,7 @@ public class HospitalDataAsyncTask extends AsyncTask<String,Integer,List<?>> {
     }
 
     public HospitalDataAsyncTask(Context mContext, IHospitalData iHospialData) {
-        this.iHospialData = iHospialData;
+        this.iHospitalData = iHospialData;
         this.mContext = mContext;
         list = new ArrayList<>();
     }
@@ -55,7 +55,7 @@ public class HospitalDataAsyncTask extends AsyncTask<String,Integer,List<?>> {
             connection.connect();
 
             if(connection.getResponseCode() != 200){
-                iHospialData.getDataError(connection.getResponseMessage());
+                iHospitalData.getDataError(connection.getResponseMessage());
             }
 
             InputStream inputStream = connection.getInputStream();
@@ -77,7 +77,7 @@ public class HospitalDataAsyncTask extends AsyncTask<String,Integer,List<?>> {
             }
 
         } catch (Exception e) {
-            iHospialData.getDataError(e.getMessage());
+            iHospitalData.getDataError(e.getMessage());
         } finally {
             connection.disconnect();
         }
@@ -89,6 +89,6 @@ public class HospitalDataAsyncTask extends AsyncTask<String,Integer,List<?>> {
     protected void onPostExecute(List<?> objects) {
         super.onPostExecute(objects);
         dialog.dismiss();
-        iHospialData.getDataSuccess(objects);
+        iHospitalData.getDataSuccess(objects);
     }
 }
